@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+	<title>Task-3</title>
+	<link rel="stylesheet" type="text/css" href="css/sty.css">
+	<script defer type="text/javascript" src="js/in.js"></script>
+</head>
+<body>
+	<header>
+		<p class="info">
+			polina8kravchuk@gmail.com
+		</p>
+	</header>
+	<section>
+		<h1>Игра в слова</h1>
+		<img src="img/1.jpg" width="200" height="200">
+		<p>Привет! Давай играть! Ты начинаешь первым. <br>
+		</p>
+		<input type="text" name="city" id="userCity">
+		<button onclick="pushCity()" id="pushButton">Push CITY</button>
+		<button onclick="pullCity()" id="pullButton" disabled="disabled">Pull CITY</button>
+		<button onclick="gameOver()">Game Over</button>
+		<button onclick="gameRestart()" id="restartButton" disabled="disabled">Restart Game</button>
+		<p class="rules"><b>Правила игры:</b><br>
+			Так как мы живем в Беларуси, то будем играть в наши города.<br>
+			Введи свой город в поле выше и нажми кнопку "Push CITY".<br>
+			Если город введен верно - нажми кнопку "Pull CITY" и компьютер пришлет ответ.<br>
+			Ошибки и комментарии будут высвечиваться в синем поле слева, а использованные слова - справа.
+		</p>
+		<p class="rulesover"><b>Конец игры:</b><br>
+			Если хочешь завершить игру - нажми "Game Over" (помни, что тебе будет засчитано поражение).<br>
+			Чтобы сыграть еще раз, кликни "Restart Game".
+		</p> 
+		
+	</section>
+	<section class="sec">
+		<p id="computer"><b>Errors and Feedback</b></p>
+		<p id="answer"><b>Our cities</b></p>
+	</section>
+
+</body> 
+</html>
